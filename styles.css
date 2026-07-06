@@ -422,9 +422,9 @@ p:last-child{ margin-bottom:0; }
 .tl-step.right .tl-text{ grid-column:3; text-align:left; }
 @media(max-width:760px){
   .timeline::before{ left:22px; }
-  .tl-step{ grid-template-columns:44px 1fr; column-gap:22px; margin-bottom:34px; }
-  .tl-num{ grid-column:1; width:44px; height:44px; font-size:18px; }
-  .tl-step.left .tl-text, .tl-step.right .tl-text{ grid-column:2; text-align:left; }
+  .tl-step{ grid-template-columns:44px 1fr; column-gap:22px; margin-bottom:34px; align-items:start; }
+  .tl-num{ grid-column:1; grid-row:1; width:44px; height:44px; font-size:18px; margin-top:-2px; }
+  .tl-step.left .tl-text, .tl-step.right .tl-text{ grid-column:2; grid-row:1; text-align:left; }
 }
 
 /* Split met uitgerekte foto (geen loze ruimte naast lange tekst) */
