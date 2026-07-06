@@ -378,6 +378,8 @@ p:last-child{ margin-bottom:0; }
 @media(min-width:861px){ .kim-photo .photo{ aspect-ratio:auto; } }
 @media(max-width:860px){
   .kim-story{ grid-template-columns:1fr; gap:26px; align-items:start; }
+  .kim-aside{ display:block; }
+  .kim-aside .kim-photo{ flex:none; min-height:0; }
   .kim-photo .photo{ aspect-ratio:4/5; height:auto; }
 }
 
@@ -545,8 +547,9 @@ footer{ background:var(--teal-dark); color:rgba(232,217,194,.7); padding:clamp(6
   .nav-links{ display:none; }
   .nav-toggle{ display:block; }
   .brand .brand-name{ font-size:23px; }
-  .split,.feature-split{ grid-template-columns:1fr; gap:40px; }
+  .split, .split.wide-txt, .split.wide-img, .split.text-wide, .split.stretch, .feature-split{ grid-template-columns:1fr; gap:36px; align-items:start; }
   .split.reverse .split-media{ order:0; }
+  .split-media .photo, .split-media .photo.fill{ aspect-ratio:4/5; height:auto; }
   .quotes{ grid-template-columns:1fr; }
   .footer-grid{ grid-template-columns:1fr 1fr; gap:32px; }
   .cards{ grid-template-columns:1fr; }
