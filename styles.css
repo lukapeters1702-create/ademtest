@@ -195,6 +195,8 @@ p:last-child{ margin-bottom:0; }
   transition:background .3s var(--ease), color .3s var(--ease), transform .25s var(--ease);
 }
 .nav.solid .nav-cta{ color:var(--cream-light); background:var(--teal); }
+/* Verberg de CTA-knop terwijl je op de hero bent; hij verschijnt zodra de balk 'solid' wordt (bij scrollen) */
+.nav:not(.solid) .nav-cta{ display:none; }
 .nav-cta:hover{ transform:translateY(-1px); }
 .nav.solid .nav-cta:hover{ background:var(--teal-dark); }
 .nav-toggle{ display:none; background:none; border:none; color:var(--cream-light); padding:6px; }
